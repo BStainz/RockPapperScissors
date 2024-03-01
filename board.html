@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game2.css">
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="round-wins">
+           <h3><span id="player-round-wins">0</span></h3>
+           <h3><span id="computer-round-wins">0</span></h3>
+    </div>
+        <div id="countdown-overlay" class="overlay">
+            <div id="countdown-message" class="overlay-message"></div>
+            <div id="game-over-message" class="overlay-message" style="display: none;"></div>
+        </div>
+        <div class ="hands">
+           <img src ="images/rockPlayer.png" id="player-fist" class="hand">
+            <img src ="images/rockBot.png" id="computer-fist" class="hand">
+        </div>
+        <h1>Rock, Paper, Scissors</h1>
+        <h2 id="round-text">Round 1</h2>
+        <div class="choices">
+        <div class="choice" id="rock" onclick="playRound('rock')">Rock</div>
+        <div class="choice" id="paper" onclick="playRound('paper')">Paper</div>
+        <div class="choice" id="scissors" onclick="playRound('scissors')">Scissors</div>
+    </div>
+    <div class="result">
+        <h2 id="result-text">Choose an option to start the game</h2>
+    </div>
+    <div class="score-board">
+        <h3>Score</h3>
+        <h3>Player: <span id="player-score">0</span></h3>
+        <h3>Computer: <span id="computer-score">0</span></h3>
+    </div>
+</div>
+<script src="game2.js"></script>
+</body>
+</html>
